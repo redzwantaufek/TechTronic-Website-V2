@@ -77,11 +77,6 @@ $row = mysqli_fetch_assoc($run_total_earnings);
 $count_total_earnings = $row['Total'];
 
 
-$get_coupons = "SELECT * FROM coupons";
-$run_coupons = mysqli_query($con,$get_coupons);
-$count_coupons = mysqli_num_rows($run_coupons);
-
-
 ?>
 
 
@@ -167,57 +162,6 @@ include("edit_p_cat.php");
 
 }
 
-if(isset($_GET['insert_cat'])){
-
-include("insert_cat.php");
-
-}
-
-if(isset($_GET['view_cats'])){
-
-include("view_cats.php");
-
-}
-
-if(isset($_GET['delete_cat'])){
-
-include("delete_cat.php");
-
-}
-
-if(isset($_GET['edit_cat'])){
-
-include("edit_cat.php");
-
-}
-
-if(isset($_GET['insert_slide'])){
-
-include("insert_slide.php");
-
-}
-
-
-if(isset($_GET['view_slides'])){
-
-include("view_slides.php");
-
-}
-
-if(isset($_GET['delete_slide'])){
-
-include("delete_slide.php");
-
-}
-
-
-if(isset($_GET['edit_slide'])){
-
-include("edit_slide.php");
-
-}
-
-
 if(isset($_GET['view_customers'])){
 
 include("view_customers.php");
@@ -242,7 +186,6 @@ if(isset($_GET['order_delete'])){
 include("order_delete.php");
 
 }
-
 
 if(isset($_GET['view_payments'])){
 
@@ -275,8 +218,6 @@ include("user_delete.php");
 
 }
 
-
-
 if(isset($_GET['user_profile'])){
 
 include("user_profile.php");
@@ -307,86 +248,11 @@ include("edit_box.php");
 
 }
 
-if(isset($_GET['insert_term'])){
-
-include("insert_term.php");
-
-}
-
-if(isset($_GET['view_terms'])){
-
-include("view_terms.php");
-
-}
-
-if(isset($_GET['delete_term'])){
-
-include("delete_term.php");
-
-}
-
-if(isset($_GET['edit_term'])){
-
-include("edit_term.php");
-
-}
-
 if(isset($_GET['edit_css'])){
 
 include("edit_css.php");
 
 }
-
-if(isset($_GET['insert_manufacturer'])){
-
-include("insert_manufacturer.php");
-
-}
-
-if(isset($_GET['view_manufacturers'])){
-
-include("view_manufacturers.php");
-
-}
-
-if(isset($_GET['delete_manufacturer'])){
-
-include("delete_manufacturer.php");
-
-}
-
-if(isset($_GET['edit_manufacturer'])){
-
-include("edit_manufacturer.php");
-
-}
-
-
-if(isset($_GET['insert_coupon'])){
-
-include("insert_coupon.php");
-
-}
-
-if(isset($_GET['view_coupons'])){
-
-include("view_coupons.php");
-
-}
-
-if(isset($_GET['delete_coupon'])){
-
-include("delete_coupon.php");
-
-}
-
-
-if(isset($_GET['edit_coupon'])){
-
-include("edit_coupon.php");
-
-}
-
 
 if(isset($_GET['insert_icon'])){
 
@@ -413,70 +279,11 @@ include("edit_icon.php");
 
 }
 
-if(isset($_GET['insert_bundle'])){
-
-include("insert_bundle.php");
-
-}
-
-if(isset($_GET['view_bundles'])){
-
-include("view_bundles.php");
-
-}
-
-if(isset($_GET['delete_bundle'])){
-
-include("delete_bundle.php");
-
-}
-
-
-if(isset($_GET['edit_bundle'])){
-
-include("edit_bundle.php");
-
-}
-
-
-if(isset($_GET['insert_rel'])){
-
-include("insert_rel.php");
-
-}
-
-if(isset($_GET['view_rel'])){
-
-include("view_rel.php");
-
-}
-
-if(isset($_GET['delete_rel'])){
-
-include("delete_rel.php");
-
-}
-
-
-if(isset($_GET['edit_rel'])){
-
-include("edit_rel.php");
-
-}
-
-
-if(isset($_GET['edit_contact_us'])){
-
-include("edit_contact_us.php");
-
-}
-
 if(isset($_GET['insert_enquiry'])){
 
 include("insert_enquiry.php");
 
 }
-
 
 if(isset($_GET['view_enquiry'])){
 
@@ -493,38 +300,6 @@ include("delete_enquiry.php");
 if(isset($_GET['edit_enquiry'])){
 
 include("edit_enquiry.php");
-
-}
-
-
-if(isset($_GET['edit_about_us'])){
-
-include("edit_about_us.php");
-
-}
-
-
-if(isset($_GET['insert_store'])){
-
-include("insert_store.php");
-
-}
-
-if(isset($_GET['view_store'])){
-
-include("view_store.php");
-
-}
-
-if(isset($_GET['delete_store'])){
-
-include("delete_store.php");
-
-}
-
-if(isset($_GET['edit_store'])){
-
-include("edit_store.php");
 
 }
 
