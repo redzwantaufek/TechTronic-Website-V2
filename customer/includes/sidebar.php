@@ -64,12 +64,6 @@ echo "
 
 </li>
 
-<li class="<?php if(isset($_GET['change_pass'])){ echo "active"; } ?>">
-
-<a href="my_account.php?change_pass"> <i class="fa fa-user"></i> Change Password </a>
-
-</li>
-
 <li class="<?php if(isset($_GET['my_wishlist'])){ echo "active"; } ?>">
 
 <a href="my_account.php?my_wishlist"> <i class="fa fa-heart"></i> My WishList </a>

@@ -144,11 +144,7 @@ include("edit_account.php");
 
 }
 
-if(isset($_GET['change_pass'])){
 
-include("change_pass.php");
-
-}
 
 if(isset($_GET['delete_account'])){
 
