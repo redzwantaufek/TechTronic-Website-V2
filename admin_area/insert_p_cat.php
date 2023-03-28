@@ -63,23 +63,7 @@ else {
 
 </div><!-- form-group Ends -->
 
-<div class="form-group" ><!-- form-group Starts -->
 
-<label class="col-md-3 control-label" >Show as Top Product Category</label>
-
-<div class="col-md-6" >
-
-<input type="radio" name="p_cat_top" value="yes" >
-
-<label> Yes </label>
-
-<input type="radio" name="p_cat_top" value="no" >
-
-<label> No </label>
-
-</div>
-
-</div><!-- form-group Ends -->
 
 <div class="form-group" ><!-- form-group Starts -->
 

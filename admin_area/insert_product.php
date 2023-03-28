@@ -77,58 +77,10 @@ else {
 </div><!-- form-group Ends -->
 
 
-<div class="form-group" ><!-- form-group Starts -->
-
-<label class="col-md-3 control-label" > Product Url </label>
-
-<div class="col-md-6" >
-
-<input type="text" name="product_url" class="form-control" required >
-
-<br>
-
-<p style="font-size:15px; font-weight:bold;">
-
-Product Url Example : navy-blue-t-shirt
-
-</p>
-
-</div>
-
-</div><!-- form-group Ends -->
 
 
-<div class="form-group" ><!-- form-group Starts -->
 
-<label class="col-md-3 control-label" > Select A Manufacturer </label>
 
-<div class="col-md-6" >
-
-<select class="form-control" name="manufacturer"><!-- select manufacturer Starts -->
-
-<option> Select A Manufacturer </option>
-
-<?php
-
-$get_manufacturer = "select * from manufacturers";
-$run_manufacturer = mysqli_query($con,$get_manufacturer);
-while($row_manufacturer= mysqli_fetch_array($run_manufacturer)){
-$manufacturer_id = $row_manufacturer['manufacturer_id'];
-$manufacturer_title = $row_manufacturer['manufacturer_title'];
-
-echo "<option value='$manufacturer_id'>
-$manufacturer_title
-</option>";
-
-}
-
-?>
-
-</select><!-- select manufacturer Ends -->
-
-</div>
-
-</div><!-- form-group Ends -->
 
 
 <div class="form-group" ><!-- form-group Starts -->
@@ -168,41 +120,7 @@ echo "<option value='$p_cat_id' >$p_cat_title</option>";
 
 </div><!-- form-group Ends -->
 
-<div class="form-group" ><!-- form-group Starts -->
 
-<label class="col-md-3 control-label" > Category </label>
-
-<div class="col-md-6" >
-
-
-<select name="cat" class="form-control" >
-
-<option> Select a Category </option>
-
-<?php
-
-$get_cat = "select * from categories ";
-
-$run_cat = mysqli_query($con,$get_cat);
-
-while ($row_cat=mysqli_fetch_array($run_cat)) {
-
-$cat_id = $row_cat['cat_id'];
-
-$cat_title = $row_cat['cat_title'];
-
-echo "<option value='$cat_id'>$cat_title</option>";
-
-}
-
-?>
-
-
-</select>
-
-</div>
-
-</div><!-- form-group Ends -->
 
 <div class="form-group" ><!-- form-group Starts -->
 
@@ -216,29 +134,7 @@ echo "<option value='$cat_id'>$cat_title</option>";
 
 </div><!-- form-group Ends -->
 
-<div class="form-group" ><!-- form-group Starts -->
 
-<label class="col-md-3 control-label" > Product Image 2 </label>
-
-<div class="col-md-6" >
-
-<input type="file" name="product_img2" class="form-control" required >
-
-</div>
-
-</div><!-- form-group Ends -->
-
-<div class="form-group" ><!-- form-group Starts -->
-
-<label class="col-md-3 control-label" > Product Image 3 </label>
-
-<div class="col-md-6" >
-
-<input type="file" name="product_img3" class="form-control" required >
-
-</div>
-
-</div><!-- form-group Ends -->
 
 <div class="form-group" ><!-- form-group Starts -->
 
@@ -252,17 +148,7 @@ echo "<option value='$cat_id'>$cat_title</option>";
 
 </div><!-- form-group Ends -->
 
-<div class="form-group" ><!-- form-group Starts -->
 
-<label class="col-md-3 control-label" > Product Sale Price </label>
-
-<div class="col-md-6" >
-
-<input type="text" name="psp_price" class="form-control" required >
-
-</div>
-
-</div><!-- form-group Ends -->
 
 <div class="form-group" ><!-- form-group Starts -->
 
@@ -348,17 +234,7 @@ echo "<option value='$cat_id'>$cat_title</option>";
 
 </div><!-- form-group Ends -->
 
-<div class="form-group" ><!-- form-group Starts -->
 
-<label class="col-md-3 control-label" > Product Label </label>
-
-<div class="col-md-6" >
-
-<input type="text" name="product_label" class="form-control" required >
-
-</div>
-
-</div><!-- form-group Ends -->
 
 <div class="form-group" ><!-- form-group Starts -->
 
