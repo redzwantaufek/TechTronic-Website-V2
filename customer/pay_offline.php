@@ -23,10 +23,6 @@ If you have any questions, please feel free to <a href="../contact.php" >contact
 
 <th> Bank Account Details </th>
 
-<th> UBL Omni,Mobi Cash Details: </th>
-
-<th> Western Union Details: </th>
-
 </tr>
 
 </thead><!-- thead Ends -->
@@ -35,13 +31,7 @@ If you have any questions, please feel free to <a href="../contact.php" >contact
 
 <tr>
 
-<td> Bank Name:ubl Account No:03333333 Branch Code:0342 Branch Name:DemoBranch	 </td>
-
-<td> NIC#001230006 Mobile No:7410000000, Name:DemoName </td>
-
-<td> Full Name:Demo Name, Mobile No:7000015000, Name:Demo, Country:US, N.I.C No:011234567
-</td>
-
+<td> Bank Name: CIMB Bank <br>No: 738926734 <br>Branch Code: 0342 <br>Branch Name: TechTronic Store Sdn. Bhd.</td>
 
 </tr>
 
