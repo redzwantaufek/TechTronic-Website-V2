@@ -74,6 +74,12 @@
           <ul class="categories">
 
             <li class="categories__item">
+              <a class="categories__link" href="../index.php">
+                Home
+              </a>
+            </li>
+
+            <li class="categories__item">
               <a class="categories__link" href="../shop.php">
                 Shop
               </a>

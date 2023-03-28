@@ -27,27 +27,18 @@ include("includes/main.php");
 
 <div class="box" ><!-- box Starts -->
 
-<?php
 
-$get_about_us = "select * from about_us";
+<h1>About Us - Our Story</h1>
 
-$run_about_us = mysqli_query($con,$get_about_us);
+<p class="lead">Techtronic is an eCommerce website that specializes in selling the latest and greatest technology products. Our mission is to provide our customers with the best possible shopping experience by offering a wide selection of high-quality products, competitive prices, and excellent customer service.
 
-$row_about_us = mysqli_fetch_array($run_about_us);
+<p class="lead">At Techtronic, we believe that technology should be accessible to everyone. That's why we offer a range of products to suit all needs and budgets, from smartphones and laptops to gaming consoles and smart home devices.</p>
 
-$about_heading = $row_about_us['about_heading'];
+<p class="lead">Our team of technology experts is always on the lookout for the latest trends and innovations in the industry, so you can be sure that the products we offer are up-to-date and of the highest quality.</p>
 
-$about_short_desc = $row_about_us['about_short_desc'];
+<p class="lead">Thank you for choosing Techtronic as your go-to destination for all your technology needs. We hope you enjoy your shopping experience!</p>
 
-$about_desc = $row_about_us['about_desc'];
-
-?>
-
-<h1> <?php echo $about_heading; ?> </h1>
-
-<p class="lead"> <?php echo $about_short_desc; ?> </p>
-
-<p> <?php echo $about_desc; ?> </p>
+<br>
 
 </div><!-- box Ends -->
 

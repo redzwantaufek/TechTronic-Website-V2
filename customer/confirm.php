@@ -67,9 +67,7 @@ $order_id = $_GET['order_id'];
 <select name="payment_mode" class="form-control"><!-- select Starts -->
 
 <option>Select Payment Mode</option>
-<option>Bank Code</option>
-<option>UBL/Omni</option>
-<option>Western Union</option>
+<option>CIMB Bank</option>
 
 </select><!-- select Ends -->
 
@@ -86,7 +84,7 @@ $order_id = $_GET['order_id'];
 
 <div class="form-group"><!-- form-group Starts -->
 
-<label>Omni Code:</label>
+<label>Payment Code:</label>
 
 <input type="text" class="form-control" name="code" required>
 

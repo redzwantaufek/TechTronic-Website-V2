@@ -903,7 +903,7 @@ img {
   padding-top: 300px;
   padding-bottom: 140px;
   color: #fff;
-  background: #666 url(../images/photo0.png) no-repeat;
+  background: #666 url("../images/poster\ 3.png") no-repeat;
   background-size: cover;
   background-position: 50%
 }

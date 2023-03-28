@@ -74,6 +74,12 @@ if(!isset($_SESSION['customer_email'])){
           <ul class="categories">
 
             <li class="categories__item">
+              <a class="categories__link" href="./index.php">
+                Home
+              </a>
+            </li>
+
+            <li class="categories__item">
               <a class="categories__link" href="./shop.php">
                 Shop
               </a>
@@ -86,7 +92,7 @@ if(!isset($_SESSION['customer_email'])){
             </li>
 
               <li class="categories__item">
-                  <a class="categories__link categories__link--active" href="#">My Account</a>
+                  <a class="categories__link" href="customer/my_account.php">My Account</a>
               </li>
 
           </ul>

@@ -29,7 +29,6 @@ If you have any questions, please feel free to <a href="../contact.php" > contac
 <th>Amount</th>
 <th>Invoice</th>
 <th>Qty</th>
-<th>Size</th>
 <th>Order Date</th>
 <th>Status</th>
 <th>Action</th>
@@ -69,7 +68,6 @@ $invoice_no = $row_orders['invoice_no'];
 
 $qty = $row_orders['qty'];
 
-$size = $row_orders['size'];
 
 $order_date = substr($row_orders['order_date'],0,11);
 
@@ -100,7 +98,6 @@ $order_status = "<b style='color:green;'>Paid</b>";
 
 <td><?php echo $qty; ?></td>
 
-<td><?php echo $size; ?></td>
 
 <td><?php echo $order_date; ?></td>
 
