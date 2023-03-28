@@ -7,16 +7,16 @@
 				<div class="footer-nav__heading">Follow Us</div>
 				<ul class="footer-nav__list">
 					<li class="footer-nav__item">
-						<a href="#" class="footer-nav__link">Facebook</a>
+						<a href="https://www.facebook.com/" class="footer-nav__link">Facebook</a>
 					</li>
 					<li class="footer-nav__item">
-						<a href="#" class="footer-nav__link">Twitter</a>
+						<a href="https://twitter.com/" class="footer-nav__link">Twitter</a>
 					</li>
 					<li class="footer-nav__item">
-						<a href="#" class="footer-nav__link">Instagram</a>
+						<a href="https://instagram.com/" class="footer-nav__link">Instagram</a>
 					</li>
 					<li class="footer-nav__item">
-						<a href="#" class="footer-nav__link">Youtube</a>
+						<a href="https://www.youtube.com/" class="footer-nav__link">Youtube</a>
 					</li>
 				</ul>
 			</div>
