@@ -192,7 +192,6 @@ $p_id = $pro_id;
 
 $product_qty = $_POST['product_qty'];
 
-$product_size = $_POST['product_size'];
 
 
 $check_product = "select * from cart where ip_add='$ip_add' AND p_id='$p_id'";
@@ -231,7 +230,7 @@ $product_price = $pro_price;
 
 }
 
-$query = "insert into cart (p_id,ip_add,qty,p_price,size) values ('$p_id','$ip_add','$product_qty','$product_price','$product_size')";
+$query = "insert into cart (p_id,ip_add,qty,p_price) values ('$p_id','$ip_add','$product_qty','$product_price')";
 
 $run_query = mysqli_query($db,$query);
 
@@ -274,26 +273,6 @@ if($status == "product"){
 
 </div><!-- form-group Ends -->
 
-<div class="form-group" ><!-- form-group Starts -->
-
-<label class="col-md-5 control-label" >Product Size</label>
-
-<div class="col-md-7" ><!-- col-md-7 Starts -->
-
-<select name="product_size" class="form-control" >
-
-<option>Select a Size</option>
-<option>Small</option>
-<option>Medium</option>
-<option>Large</option>
-
-
-</select>
-
-</div><!-- col-md-7 Ends -->
-
-
-</div><!-- form-group Ends -->
 
 <?php }else { ?>
 
@@ -317,27 +296,6 @@ if($status == "product"){
 </select>
 
 </div><!-- col-md-7 Ends -->
-
-</div><!-- form-group Ends -->
-
-<div class="form-group" ><!-- form-group Starts -->
-
-<label class="col-md-5 control-label" >Bundle Size</label>
-
-<div class="col-md-7" ><!-- col-md-7 Starts -->
-
-<select name="product_size" class="form-control" >
-
-<option>Select a Size</option>
-<option>Small</option>
-<option>Medium</option>
-<option>Large</option>
-
-
-</select>
-
-</div><!-- col-md-7 Ends -->
-
 
 </div><!-- form-group Ends -->
 
@@ -638,16 +596,6 @@ $pro_img1 = $row_products['product_img1'];
 
 $pro_label = $row_products['product_label'];
 
-$manufacturer_id = $row_products['manufacturer_id'];
-
-$get_manufacturer = "select * from manufacturers where manufacturer_id='$manufacturer_id'";
-
-$run_manufacturer = mysqli_query($db,$get_manufacturer);
-
-$row_manufacturer = mysqli_fetch_array($run_manufacturer);
-
-$manufacturer_name = $row_manufacturer['manufacturer_title'];
-
 $pro_psp_price = $row_products['product_psp_price'];
 
 $pro_url = $row_products['product_url'];
@@ -704,11 +652,7 @@ echo "
 
 <div class='text' >
 
-<center>
 
-<p class='btn btn-warning'> $manufacturer_name </p>
-
-</center>
 
 <hr>
 
@@ -731,7 +675,7 @@ echo "
 
 </div>
 
-$product_label
+
 
 
 </div>

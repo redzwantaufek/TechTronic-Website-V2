@@ -174,13 +174,13 @@ $<?php echo $sub_total; ?>.00
 
 <div class="form-group"><!-- form-group Starts -->
 
-<label>Coupon Code : </label>
 
-<input type="text" name="code" class="form-control">
+
+
 
 </div><!-- form-group Ends -->
 
-<input class="btn btn-primary" type="submit" name="apply_coupon" value="Apply Coupon Code" >
+
 
 </div><!-- form-inline pull-right Ends -->
 
@@ -468,7 +468,7 @@ echo "
 
 </div>
 
-$product_label
+
 
 
 </div>
