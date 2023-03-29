@@ -81,7 +81,7 @@
 
             <li class="categories__item">
               <a class="categories__link" href="../shop.php">
-                Shop
+                Product
               </a>
             </li>
 

@@ -13,7 +13,7 @@ include("includes/main.php");
     <!-- HERO -->
     <div class="nero">
       <div class="nero__heading">
-        <span class="nero__bold">shop</span> AT AVE
+        <span class="nero__bold">Products</span>
       </div>
       <p class="nero__text">
       </p>
@@ -171,43 +171,7 @@ $(document).ready(function(){
 
   function getProducts(){
 
-  // Manufacturers Code Starts
 
-    var sPath = '';
-
-var aInputs = $('li').find('.get_manufacturer');
-
-var aKeys = Array();
-
-var aValues = Array();
-
-iKey = 0;
-
-$.each(aInputs,function(key,oInput){
-
-if(oInput.checked){
-
-aKeys[iKey] =  oInput.value
-
-};
-
-iKey++;
-
-});
-
-if(aKeys.length>0){
-
-var sPath = '';
-
-for(var i = 0; i < aKeys.length; i++){
-
-sPath = sPath + 'man[]=' + aKeys[i]+'&';
-
-}
-
-}
-
-// Manufacturers Code ENDS
 
 // Products Categories Code Starts
 
@@ -245,42 +209,7 @@ sPath = sPath + 'p_cat[]=' + aKeys[i]+'&';
 
 // Products Categories Code ENDS
 
-   // Categories Code Starts
-
-var aInputs = Array();
-
-var aInputs = $('li').find('.get_cat');
-
-var aKeys  = Array();
-
-var aValues = Array();
-
-iKey = 0;
-
-    $.each(aInputs,function(key,oInput){
-
-    if(oInput.checked){
-
-    aKeys[iKey] =  oInput.value
-
-};
-
-    iKey++;
-
-});
-
-if(aKeys.length>0){
-
-    for(var i = 0; i < aKeys.length; i++){
-
-    sPath = sPath + 'cat[]=' + aKeys[i]+'&';
-
-}
-
-}
-
-   // Categories Code ENDS
-
+ 
    // Loader Code Starts
 
 $('#wait').html('<img src="images/load.gif">');
