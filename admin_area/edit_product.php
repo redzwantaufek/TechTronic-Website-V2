@@ -62,16 +62,6 @@ $p_video = $row_edit['product_video'];
 
 }
 
-$get_manufacturer = "select * from manufacturers where manufacturer_id='$m_id'";
-
-$run_manufacturer = mysqli_query($con,$get_manufacturer);
-
-$row_manfacturer = mysqli_fetch_array($run_manufacturer);
-
-$manufacturer_id = $row_manfacturer['manufacturer_id'];
-
-$manufacturer_title = $row_manfacturer['manufacturer_title'];
-
 
 $get_p_cat = "select * from product_categories where p_cat_id='$p_cat'";
 
@@ -87,7 +77,6 @@ $run_cat = mysqli_query($con,$get_cat);
 
 $row_cat = mysqli_fetch_array($run_cat);
 
-$cat_title = $row_cat['cat_title'];
 
 ?>
 
@@ -180,45 +169,7 @@ Product Url Example : navy-blue-t-shirt
 
 </div><!-- form-group Ends -->
 
-<div class="form-group" ><!-- form-group Starts -->
 
-<label class="col-md-3 control-label" > Select A Manufacturer </label>
-
-<div class="col-md-6" >
-
-<select name="manufacturer" class="form-control">
-
-<option value="<?php echo $manufacturer_id; ?>">
-<?php echo $manufacturer_title; ?>
-</option>
-
-<?php
-
-$get_manufacturer = "select * from manufacturers";
-
-$run_manufacturer = mysqli_query($con,$get_manufacturer);
-
-while($row_manfacturer = mysqli_fetch_array($run_manufacturer)){
-
-$manufacturer_id = $row_manfacturer['manufacturer_id'];
-
-$manufacturer_title = $row_manfacturer['manufacturer_title'];
-
-echo "
-<option value='$manufacturer_id'>
-$manufacturer_title
-</option>
-";
-
-}
-
-?>
-
-</select>
-
-</div>
-
-</div><!-- form-group Ends -->
 
 <div class="form-group" ><!-- form-group Starts -->
 
@@ -257,41 +208,7 @@ echo "<option value='$p_cat_id' >$p_cat_title</option>";
 
 </div><!-- form-group Ends -->
 
-<div class="form-group" ><!-- form-group Starts -->
 
-<label class="col-md-3 control-label" > Category </label>
-
-<div class="col-md-6" >
-
-
-<select name="cat" class="form-control" >
-
-<option value="<?php echo $cat; ?>" > <?php echo $cat_title; ?> </option>
-
-<?php
-
-$get_cat = "select * from categories ";
-
-$run_cat = mysqli_query($con,$get_cat);
-
-while ($row_cat=mysqli_fetch_array($run_cat)) {
-
-$cat_id = $row_cat['cat_id'];
-
-$cat_title = $row_cat['cat_title'];
-
-echo "<option value='$cat_id'>$cat_title</option>";
-
-}
-
-?>
-
-
-</select>
-
-</div>
-
-</div><!-- form-group Ends -->
 
 <div class="form-group" ><!-- form-group Starts -->
 
@@ -344,17 +261,7 @@ echo "<option value='$cat_id'>$cat_title</option>";
 
 </div><!-- form-group Ends -->
 
-<div class="form-group" ><!-- form-group Starts -->
 
-<label class="col-md-3 control-label" > Product Sale Price </label>
-
-<div class="col-md-6" >
-
-<input type="text" name="psp_price" class="form-control" required value="<?php echo $psp_price; ?>">
-
-</div>
-
-</div><!-- form-group Ends -->
 
 <div class="form-group" ><!-- form-group Starts -->
 
@@ -443,17 +350,7 @@ echo "<option value='$cat_id'>$cat_title</option>";
 
 </div><!-- form-group Ends -->
 
-<div class="form-group" ><!-- form-group Starts -->
 
-<label class="col-md-3 control-label" > Product Label </label>
-
-<div class="col-md-6" >
-
-<input type="text" name="product_label" class="form-control" required value="<?php echo $p_label; ?>">
-
-</div>
-
-</div><!-- form-group Ends -->
 
 <div class="form-group" ><!-- form-group Starts -->
 
