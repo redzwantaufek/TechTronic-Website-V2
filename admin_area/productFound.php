@@ -89,5 +89,7 @@
     //close the database connection
     mysqli_close($con);
     ?>
+    <br>
+    <button><a href="view_products.php">Back To Product List</a></button>
 </body>
 </html>
