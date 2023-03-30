@@ -16,7 +16,7 @@ include("includes/main.php");
     <!-- HERO -->
     <div class="nero">
       <div class="nero__heading">
-        <span class="nero__bold">Register</span> AT AVE
+        <span class="nero__bold">Register</span>
       </div>
       <p class="nero__text">
       </p>

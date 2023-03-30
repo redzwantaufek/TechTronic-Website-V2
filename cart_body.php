@@ -431,7 +431,7 @@ echo "
 
 <center>
 
-<p class='btn btn-primary'> $manufacturer_name </p>
+
 
 </center>
 
