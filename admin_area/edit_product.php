@@ -30,8 +30,6 @@ $p_cat = $row_edit['p_cat_id'];
 
 $cat = $row_edit['cat_id'];
 
-$m_id = $row_edit['manufacturer_id'];
-
 $p_image1 = $row_edit['product_img1'];
 
 $p_image2 = $row_edit['product_img2'];

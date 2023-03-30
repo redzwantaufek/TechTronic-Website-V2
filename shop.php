@@ -32,7 +32,7 @@ include("includes/main.php");
 
 <div class="col-md-3"><!-- col-md-3 Starts -->
 
-<?php include("includes/sidebar.php"); ?>
+
 
 </div><!-- col-md-3 Ends -->
 
