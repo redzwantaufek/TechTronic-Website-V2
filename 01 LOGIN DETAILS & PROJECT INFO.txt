@@ -1,10 +1,5 @@
-**Log on to freeprojectscodes.com for more projects!***
 
-**Database Name: ecom_store**
-
-**Developed by Yasser Dalouzi**
-
-**Recommended PHP Version 5.6 and Newer**
+**Database Name: techtronic_db**
 
 
 **Admin Panel: /admin_area **
